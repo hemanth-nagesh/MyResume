@@ -26,6 +26,8 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.css" rel="stylesheet">
+
 
   <!-- =======================================================
   * Template Name: MyResume
@@ -68,10 +70,10 @@
             <h2>Hemanth Nagesh E</h2>
             <p>I'm <span class="typed" data-typed-items="AI Engineer, ML Developer, Data Analyst, Data Engineer">AI/ML Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="https://x.com/Nageshehemanth?t=5HCyb8jsrkVH_Zns53KdmQ&s=08"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://github.com/hemanth-nagesh"><i class="bi bi-github"></i></a>
+              <a href="https://www.instagram.com/__hemanth__beast_/"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/e-hemanth-nagesh-1b12731b7"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -120,7 +122,7 @@
             <p class="py-3">
               Skilled in creative content generation, natural language processing, and advanced machine learning techniques. Holds a Master’s in Computer Applications (MCA) with hands-on experience from internships and professional roles. Proficient in building scalable AI solutions, fine-tuning LLMs, and applying AI to solve real-world challenges.
             </p>
-          </div>
+            <button type="submit" style="background-color: black;" class="btn btn-primary btn-rounded" id="downloadPdfButton"><i class="bi bi-download"></i> Print Resume</button>
         </div>
 
       </div>
@@ -499,11 +501,11 @@
       <h3 class="sitename">Hemanth Nagesh E</h3>
       <p>For any kind of connections you can connect from any of the following social network😊.</p>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://x.com/Nageshehemanth?t=5HCyb8jsrkVH_Zns53KdmQ&s=08"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://github.com/hemanth-nagesh"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/__hemanth__beast_/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www,skype.com/hemanthnagesh.e"><i class="bi bi-skype"></i></a>
+        <a href="https://www.linkedin.com/in/e-hemanth-nagesh-1b12731b7"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="container">
         <div class="copyright">
@@ -520,6 +522,44 @@
   <!-- Preloader -->
   <div id="preloader"></div>
 
+  <!-- Download resume -->
+  <script>
+    document.getElementById('downloadPdfButton').addEventListener('click', function() {
+    // Path to the PDF file relative to the root of your web server
+    const pdfPath = 'assets/img/E_Hemanth_Nagesh_2023.pdf';
+
+    // Fetch the PDF file
+    fetch(pdfPath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.blob();
+        })
+        .then(blob => {
+            // Create a blob URL for the PDF blob
+            const blobUrl = URL.createObjectURL(blob);
+
+            // Create a link element
+            const a = document.createElement('a');
+            a.href = blobUrl;
+            a.download = 'E_Hemanth_Nagesh_Resume_2023.pdf';  // Specify the filename
+
+            // Append the link to the body
+            document.body.appendChild(a);
+
+            // Trigger the download
+            a.click();
+
+            // Clean up
+            window.URL.revokeObjectURL(blobUrl);
+            document.body.removeChild(a);
+        })
+        .catch(error => {
+            console.error('Error fetching PDF:', error);
+        });
+});
+</script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
