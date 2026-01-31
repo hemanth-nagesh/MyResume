@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 const About = () => {
   const handleDownload = () => {
     const link = document.createElement('a')
