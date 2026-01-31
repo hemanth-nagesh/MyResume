@@ -1,0 +1,8 @@
+[build]
+  command = "cd resume-react && npm run build"
+  publish = "resume-react/dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
