@@ -1,5 +1,5 @@
 [build]
-  command = "cd resume-react && npm run build"
+  command = "cd resume-react && npm install && npm run build"
   publish = "resume-react/dist"
 
 [build.environment]
