@@ -2,6 +2,9 @@
   command = "cd resume-react && npm run build"
   publish = "resume-react/dist"
 
+[build.environment]
+  NPM_CONFIG_PRODUCTION = "false"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
