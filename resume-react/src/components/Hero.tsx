@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 const Hero = () => {
-  const roles = ['AI Engineer', 'AI Developer', 'Software Engineer AI', 'AI/ML Engineer']
+  const roles = ['Software Engineer – GenAI', 'LLM Backend Engineer', 'Agentic Systems Engineer', 'AI Infrastructure Engineer']
   const [currentRole, setCurrentRole] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
   const [text, setText] = useState('')

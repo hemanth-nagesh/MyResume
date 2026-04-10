@@ -19,7 +19,7 @@ const About = () => {
     <section id="about">
       <div className="section-title">
         <h2>About</h2>
-        <p>Dynamic innovative AI researcher with a proven track record of designing and implementing cutting-edge generative AI models and architectures.</p>
+        <p>Software Engineer with 2.5+ years of experience designing and deploying Generative AI and LLM-powered backend systems in enterprise settings.</p>
       </div>
 
       <div className="about-content">
@@ -28,9 +28,9 @@ const About = () => {
         </div>
 
         <div className="about-details">
-          <h3>AI/ML Developer & Data Analyst</h3>
+          <h3>Software Engineer – Generative AI &amp; Backend Systems</h3>
           <p className="intro">
-            Expertise in applying machine learning techniques to creative content generation, natural language processing, and other AI-powered applications.
+            Proficient in Python, LangChain, LangGraph, RAG architectures, prompt engineering, and vector databases — with hands-on experience integrating OpenAI APIs, Azure AI Foundry, and AWS Bedrock. Azure AI Engineer Certified.
           </p>
 
           <div className="info-grid">
@@ -45,7 +45,7 @@ const About = () => {
           </div>
 
           <p>
-            Innovative and deadline-driven AI/ML Engineer with a strong foundation in designing, developing, and deploying user-centered AI models from concept to final deliverable. Experienced in model training, fine-tuning LLMs, and leveraging Google Cloud and Azure for scalable solutions. Skilled in applying machine learning techniques to solve real-world challenges across various domains.
+            Proven track record delivering measurable production outcomes in enterprise Generative AI systems. Experienced in multi-agent LLM backends, agentic systems using LangGraph, CI/CD-triggered RAG pipelines, and responsible AI practices — with additional research depth in accessible AI interfaces (WCAG, TCS Accessibility Team).
           </p>
 
           <button className="download-btn" onClick={handleDownload}>

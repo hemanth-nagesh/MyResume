@@ -1,0 +1,78 @@
+HEMANTH NAGESH
+Software Engineer – Generative AI & Backend Systems
+Bangalore, India • hemanthnagesh082@gmail.com • +91 9980144503 • LinkedIn • GitHub • Portfolio
+
+PROFESSIONAL SUMMARY
+Software Engineer with 2.5+ years of experience designing, building, and deploying Generative AI and LLM-powered backend systems in enterprise settings. Proficient in
+Python, LangChain, LangGraph, RAG architectures, prompt engineering, and vector databases — with hands-on experience integrating OpenAI APIs, Azure AI Foundry, and
+AWS Bedrock. Proven track record delivering measurable production outcomes, with additional research depth in accessible AI interfaces (WCAG, TCS Accessibility Team).
+Azure AI Engineer Certified.
+
+TECHNICAL SKILLS
+Programming: Python, Java, SQL
+Generative AI & LLM: LangChain, LangGraph, AutoGen, OpenAI APIs, Prompt Engineering, LLM Evaluation Frameworks, RAG Architectures, Embedding Techniques,
+Semantic Search, Document Retrieval
+AI Infrastructure & MLOps: vLLM (LLM Inferencing), Model Context Protocols, CI/CD for AI, LLMOps, Responsible AI Practices, Performance & Cost Optimization
+Backend & Systems: Django, REST APIs, Microservices, Distributed Systems, Containerization (Docker), Kubernetes, Fault Tolerance
+Frontend: React.js, AI Interface Design Patterns, Accessible UI (WCAG Standards)
+Databases & Storage: PostgreSQL, Vector Databases, Structured & Unstructured Data Processing
+Cloud & DevOps: Azure AI Foundry, Azure OpenAI, AWS Bedrock, GCP Vertex AI, Docker, CI/CD, GitHub
+
+EXPERIENCE
+Tata Consultancy Services (TCS)
+Software Engineer – Generative AI & Agentic Systems
+Dec 2023 – Present
+• Designed and deployed a production-grade multi-agent LLM backend using LangGraph and LangChain, reducing system execution time by 70% through parallel
+tool-calling, fault-tolerant retry logic, and circuit breakers across distributed microservices.
+• Built a vector-indexed agent routing registry that eliminated 30% of workflow faults by replacing hardcoded dispatch logic with semantic capability matching —
+directly improving service quality and availability in a globally distributed Agile team.
+• Engineered a CI/CD-triggered RAG ingestion pipeline integrating document chunking, embedding generation, and vector database indexing — automating
+document processing from upload to production-ready retrieval with zero manual intervention.
+• Collaborated with TCS Accessibility Research Team to develop and ship a WCAG-compliant voice agent, applying prompt engineering and NLP techniques to create
+accessible AI interfaces for users with disabilities.
+• Implemented a Human-in-the-Loop (HITL) checkpoint system and an autonomous browser automation agent, both shipped through structured code review cycles
+and quality gates aligned with responsible AI and security best practices.
+
+BOTSIO Chatbot LLP
+Software Engineer Intern – LLM Applications
+Mar 2023 – May 2023
+• Implemented backend semantic retrieval pipelines — embedding generation, vector indexing, and similarity search — to ground production chatbot responses in
+verified knowledge sources, improving response consistency for live users.
+• Debugged and resolved latency and correctness issues in deployed AI microservices integrated with PostgreSQL; contributed prompt engineering improvements
+adopted across subsequent model releases.
+
+PROJECTS
+Agentic Financial Document Assistant
+• Designed a LangGraph-based distributed planner-executor backend for complex query answering over financial documents — planning agent decomposes queries,
+delegates to specialised sub-agents, and returns schema-validated, cited responses at scale.
+• Integrated automated evaluation framework into CI/CD with LLM-as-judge scoring and regression suites, ensuring every deployment meets quality and compliance
+standards for a regulated BFSI use case.
+• Implemented safety guardrails including output schema enforcement, confidence thresholding, and HITL escalation — aligned with responsible AI and enterprise
+security requirements.
+Stack: Python, Django, LangChain, LangGraph, OpenAI API, PostgreSQL, Vector Databases, Docker, REST APIs
+
+LLM Observability & Evaluation Platform
+• Built shared backend infrastructure for monitoring LLM services in production: structured logging across prompt versions, token usage, and latency — enabling
+systematic debugging, cost analysis, and MLOps tracking.
+• Reduced evaluation turnaround from hours to minutes by integrating real-time LLM-as-judge scoring and quality alerts directly into CI/CD pipelines.
+Stack: Python, LangChain, OpenAI API, PostgreSQL, Docker, CI/CD, REST APIs
+
+RAG-Powered Enterprise Knowledge Assistant
+• Deployed horizontally scalable microservices on Azure with hybrid retrieval (dense vector + keyword search) over large document repositories, health checks,
+autoscaling, and full audit logging for compliance.
+• Integrated Azure OpenAI for LLM orchestration with structured output parsing, retry logic, and fallback handling — optimizing performance and cost for enterprisescale unstructured data processing.
+Stack: Python, Django, LangGraph, LlamaIndex, Azure AI Foundry, Azure OpenAI, PostgreSQL, Docker, REST APIs
+
+EDUCATION
+Master of Computer Applications (MCA)
+PES College of Engineering, Mandya
+
+2021 – 2023
+
+Bachelor of Computer Applications (BCA)
+Ramaiah Institute of Business Studies, Bangalore
+
+2018 – 2021
+
+PUBLICATION
+AI-Powered Information Retrieval Systems — Peer-reviewed research on semantic search, RAG techniques, and accessible AI interface design. Published 2023.

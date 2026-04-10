@@ -10,14 +10,14 @@ const Skills = () => {
   const sectionRef = useRef<HTMLDivElement>(null)
 
   const skills: Skill[] = [
-    { name: 'Generative AI & LLM Fine-tuning', value: 95 },
-    { name: 'Machine Learning & Deep Learning', value: 90 },
-    { name: 'Python (PyTorch, TensorFlow, Keras)', value: 95 },
-    { name: 'Computer Vision (YOLO, OpenCV)', value: 85 },
-    { name: 'NLP & Text Processing', value: 90 },
-    { name: 'Cloud Platforms (Azure, GCP)', value: 85 },
-    { name: 'SQL & Database Management', value: 80 },
-    { name: 'Java & Software Development', value: 85 },
+    { name: 'LangChain, LangGraph & Agentic Systems', value: 95 },
+    { name: 'RAG Architectures & Semantic Search', value: 92 },
+    { name: 'Python & Backend Development', value: 95 },
+    { name: 'OpenAI APIs & Prompt Engineering', value: 90 },
+    { name: 'Vector Databases & Embedding Techniques', value: 88 },
+    { name: 'Azure AI Foundry, AWS Bedrock & GCP Vertex AI', value: 85 },
+    { name: 'Docker, Kubernetes & CI/CD (MLOps)', value: 85 },
+    { name: 'Django, REST APIs & Microservices', value: 82 },
   ]
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const Skills = () => {
     <section id="skills" ref={sectionRef}>
       <div className="section-title">
         <h2>Skills</h2>
-        <p>Innovative AI researcher in designing generative models, solving real-world challenges, and delivering impactful AI-powered solutions.</p>
+        <p>Specialized in LLM backends, agentic systems, RAG pipelines, and cloud-native AI infrastructure delivering measurable production outcomes.</p>
       </div>
 
       <div className="skills-grid">
