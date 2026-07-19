@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
+import { db } from '../lib/firebase'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -32,6 +34,19 @@ const Contact = () => {
       const result = await response.json()
 
       if (result.success) {
+        try {
+          await addDoc(collection(db, 'messages'), {
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+            timestamp: serverTimestamp(),
+            read: false,
+          })
+        } catch {
+          // Firestore save is best-effort
+        }
+
         setSubmitStatus('success')
         setFormData({ name: '', email: '', subject: '', message: '' })
         setTimeout(() => setSubmitStatus('idle'), 5000)
@@ -39,8 +54,7 @@ const Contact = () => {
         setSubmitStatus('error')
         setTimeout(() => setSubmitStatus('idle'), 5000)
       }
-    } catch (error) {
-      console.error('Form submission error:', error)
+    } catch {
       setSubmitStatus('error')
       setTimeout(() => setSubmitStatus('idle'), 5000)
     } finally {
